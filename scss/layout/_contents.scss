@@ -1,0 +1,226 @@
+.l-contents{
+	width: 100%;
+	height: auto;
+	&.-img{// 背景画像のみ
+		width: 100%;
+		height: auto;
+	}
+	&.-img-bg{// 背景画像＋コンテンツ
+		position: relative;
+		.imgBox{// 背景画像
+			width: 100%;
+			height: auto;
+			&.-dummy{
+				@include mq(tb){
+					width: 100vw;
+					height: 100vh;
+				}
+				&_04{
+					width: 100vw;
+					@include mq(tb){
+						height: 75vh;
+					}
+				}
+			}
+			&.-parallax{//パラドックス背景の場合、ここは透明画像
+				justify-content: center;
+				align-items: center;
+
+				background-attachment: fixed;
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+				&.-parallax_bg{//ここに背景を指定する。
+					@include mq(tb){
+						background-image: url(../images/bg/f-view.png);
+					}
+				}
+				&.-parallax_bg04{//ここに背景を指定する。
+					@include mq(tb){
+						background-image: url(../images/bg/top-content04.png);
+					}
+				}
+			}
+		}
+		.l-contentsBox{// コンテンツ要素
+			width: 100%;
+			position: absolute;
+			
+			// ファーストビュー > カバー
+			&.-f-view-cover{
+				@include mq(tb){
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 100%;
+					height: auto;
+				}
+			}
+			&.-f-view-logo {
+				@include mq(tb){
+					top: 50%;
+					left: 75%;
+					transform: translate(-50%, -50%);
+					width: 50%;
+					max-width: 450px;
+				}
+			}
+			// 自由設計の街（区画）
+			&.-kukakuBtn{
+				top: 96%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 70%;
+				@include mq(tb){
+					top: 82%;
+					left: 12.5%;
+					width: 25%;
+				}
+			}
+			// 街並み・開放感・安心
+			&.-pin01{
+				top: 36%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 100%;
+				@include mq(tb){
+					top: 16.5%;
+					left: 76.5%;
+					width: 45%;
+				}
+			}
+			&.-pin02{
+				top: 88%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 100%;
+				@include mq(tb){
+					top: 75.5%;
+					left: 76.5%;
+					width: 45%;
+				}
+			}
+			// 選べる充実設備の数々。
+			&.-content04-cover{
+				@include mq(tb){
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 100%;
+					height: 100%;
+					background: rgba(0, 0, 0, 0.678);
+				}
+			}
+			&.-content04-des{
+				@include mq(tb){
+					top: 40%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 50%;
+					max-width: 550px;
+				}
+			}
+			&.-setsubiBtn{
+				top: 74%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 80%;
+				@include mq(tb){
+					top: 75%;
+					width: 35%;
+					max-width: 400px;
+				}
+			}
+
+			//サイト右側中段に表示 （PCのみ）
+			&.-right-topBtn{
+				top: 2.5%;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 100%;
+				a{
+					display: block;
+					padding: 8% 23%;
+				}
+			}
+			// サイト下部に表示（SPのみ）
+			&.-right-btmBtn{
+				top: 52.5%;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 100%;
+				a{
+					display: block;
+					padding: 8% 23%;
+				}
+			}
+			//サイト下部に表示 （SPのみ）
+			&.-bottom-rightBtn{
+				top: 0%;
+				left: 75%;
+				transform: translateX(-50%);
+				width: 100%;
+				a{
+					display: block;
+					padding: 0% 24%;
+				}
+			}
+			// サイト下部に表示（SPのみ）
+			&.-bottom-leftBtn{
+				top: 0%;
+				left: 25%;
+				transform: translateX(-50%);
+				width: 100%;
+				a{
+					display: block;
+					padding: 0% 24%;
+				}
+			}
+
+
+			.l-contentsBox--wrapper{
+				width: 100%;
+				height: auto;
+				@include mq(tb){
+					width: 100%;
+					max-width: 1315px;
+					margin: auto;
+				}
+			}
+			&.-text{
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+			}
+		}
+	}
+	// 基本的にSliderは、「Slick or Swiper」を使用すること
+	// 場所：「Scss/introduction内」
+	&.-slider{
+		//下記スマホ以上
+		@include mq(tb){
+		}
+	}
+	// 設備・仕様ページの【 戻る 】
+	&.-btnArea{
+		&.-return{
+			a{
+				display: block;
+				width: 20%;
+				border-radius: 5px;
+				overflow: hidden;
+				margin: auto;
+				text-align: center;
+				box-shadow: 1px 1px gray;
+				@include mq(tb){
+					width: 10%;
+				}
+				@include mq(tb-pc1400){
+					width: 6%;
+				}
+			}
+		}
+	}
+}
+
+
