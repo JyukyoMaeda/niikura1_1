@@ -71,10 +71,13 @@ img{
 
 
 .w1200{
-	width: 65% !important;
+	width: 85% !important;
 	max-width: 1200px;
 	margin: auto;
 	&.-s100{
+		width: 100% !important;
+	}
+	&.-s65{
 		width: 100% !important;
 	}
 }

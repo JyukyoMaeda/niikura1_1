@@ -250,13 +250,13 @@
 					.l-linkImg{
 						background: $contact-item-3;
 					}
-
 				}
-				// &:nth-child(4){
-				// 	.l-linkImg{
-				// 		background: $contact-item-4;
-				// 	}
-				// }
+				&.-modal-in{
+					width: 48%;
+					@include mq(tb){
+						width: 30%;
+					}
+				}
 			}
 		}
 		&.-tab-box{

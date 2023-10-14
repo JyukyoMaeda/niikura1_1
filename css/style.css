@@ -124,11 +124,14 @@ img {
 }
 
 .w1200 {
-  width: 65% !important;
+  width: 85% !important;
   max-width: 1200px;
   margin: auto;
 }
 .w1200.-s100 {
+  width: 100% !important;
+}
+.w1200.-s65 {
   width: 100% !important;
 }
 
@@ -604,6 +607,33 @@ img {
     max-width: 400px;
   }
 }
+.l-contents.-img-bg .l-contentsBox.-sekourei {
+  bottom: 0;
+  right: 0;
+  transform: translate(-50%, -50%);
+  width: auto;
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-sekourei {
+    bottom: 0;
+    right: 0;
+    transform: translate(-50%, -50%);
+    width: auto;
+  }
+}
+.l-contents.-img-bg .l-contentsBox.-sliderArea {
+  top: 70%;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-sliderArea {
+    top: 50%;
+    left: 75%;
+    width: 45%;
+  }
+}
 .l-contents.-img-bg .l-contentsBox.-right-topBtn {
   top: 2.5%;
   left: 50%;
@@ -925,6 +955,14 @@ img {
 }
 .l-flex--area .l-flex--contents.-contact-box_okano .flexItem:nth-child(3) .l-linkImg {
   background: #534741;
+}
+.l-flex--area .l-flex--contents.-contact-box_okano .flexItem.-modal-in {
+  width: 48%;
+}
+@media screen and (min-width: 767px) {
+  .l-flex--area .l-flex--contents.-contact-box_okano .flexItem.-modal-in {
+    width: 30%;
+  }
 }
 .l-flex--area .l-flex--contents.-tab-box {
   width: 90vw;
@@ -1952,6 +1990,9 @@ img {
   .l-text.-lts-8 {
     letter-spacing: 8px;
   }
+}
+.l-text.-shadow {
+  text-shadow: 1px 1px 0px white;
 }
 .l-text.-size10 {
   font-size: 12px;

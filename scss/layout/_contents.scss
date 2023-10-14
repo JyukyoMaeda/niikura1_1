@@ -131,6 +131,31 @@
 					max-width: 400px;
 				}
 			}
+			&.-sekourei{
+					bottom: 0;
+					right: 0;
+					transform: translate(-50%, -50%);
+					width:auto;
+				@include mq(tb){
+					bottom: 0;
+					right: 0;
+					transform: translate(-50%, -50%);
+					width:auto;
+				}
+			}
+
+			// スライダー
+			&.-sliderArea{
+				top: 70%;
+				left: 50%;
+				width: 90%;
+				transform: translate(-50%, -50%);
+				@include mq(tb){
+					top: 50%;
+					left: 75%;
+					width: 45%;
+				}
+			}
 
 			//サイト右側中段に表示 （PCのみ）
 			&.-right-topBtn{
