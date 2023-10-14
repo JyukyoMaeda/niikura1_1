@@ -634,6 +634,18 @@ img {
     width: 45%;
   }
 }
+@media screen and (max-width: 768px) {
+  .l-contents.-img-bg .l-contentsBox.-tap {
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 23%;
+  }
+  .l-contents.-img-bg .l-contentsBox.-tap a {
+    display: block;
+    height: 100%;
+  }
+}
 .l-contents.-img-bg .l-contentsBox.-right-topBtn {
   top: 2.5%;
   left: 50%;

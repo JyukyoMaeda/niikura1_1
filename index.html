@@ -249,11 +249,14 @@
                     </div>
                 </div>
             </div>
-            <!-- コンテンツ6 / 3駅で利用できる始発駅 -->
+            <!-- コンテンツ6 / 3路線利用できる始発駅 -->
             <div id="content4" class="l-contents -img-bg w1200 w93-s l-mgb_20">
                 <div class="imgBox">
                     <img class="pc" src="images/bg/top-content06.png" alt="3路線利用できる始発駅で、通勤を楽に。">
                     <img class="sp" src="images/bg/top-content06_s.png" alt="3路線利用できる始発駅で、通勤を楽に。">
+                </div>
+                <div class="sp l-contentsBox -tap">
+                    <a class="inline B cboxElement" href="#modal02"></a>
                 </div>
             </div>
             <!-- コンテンツ7 / 多方面へ良好な和光IC -->
@@ -298,7 +301,7 @@
 
     <!-- 南道路が良いとされている理由 / モーダル -->
     <!-- 画像サイズは、直接指定すること -->
-    <div class="inline_modal">
+    <div class="inline_modal w93-s">
         <div id="modal01" style="margin-top: 2.5%;">
             <img class="pc" style="width: 75vw; margin-bottom: 10vh;" src="images/modal/modalItem01.png" alt="システムキッチン">
             <img class="sp" style="width: 85vw; margin-bottom: 5vh;" src="images/modal/modalItem01s.png" alt="システムキッチン">
@@ -333,10 +336,14 @@
             </div>
 
         </div>
-        <!-- 複数モーダルを使う際の記述 -->
-        <!-- <div id="modal02" class="">
-            <img src="" alt="">
+        <!-- <div id="modal02" style="margin-top: 2.5%; overflow-x: scroll;">
+            <img style="width: 400px;" src="images/bg/train-map.png" alt="路線図">
         </div> -->
+    </div>
+    <div class="inline_modal">
+        <div id="modal02" style="margin-top: 2.5%; overflow-x: scroll;">
+            <img style="width: 120vw;" src="images/bg/train-map.png" alt="路線図">
+        </div>
     </div>
 
 
@@ -389,12 +396,19 @@
                     inline:true,
                     width:"auto",
                     height: "auto",
-
+                });
+                $(".inline.B").colorbox({
+                    inline:true,
+                    width:"95%",
+                    height: "auto",
                 });
                 // HTMLで指定したIDの要素をクリックするとColorBoxウィンドウが閉じます。
-                $("#cboxClose_bottom,#cboxClose_bottom_m01").click(function(){
-                    parent.$.fn.colorbox.close(); return false;
-                });
+                // $("#cboxClose_bottom,#cboxClose_bottom_m01").click(function(){
+                //     parent.$.fn.colorbox.close(); return false;
+                // });
+            });
+            $(document).ready(function(){
+
             });
         });
         // 通常スライダー用

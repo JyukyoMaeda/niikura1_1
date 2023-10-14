@@ -157,6 +157,21 @@
 				}
 			}
 
+			// タップで拡大
+			&.-tap{
+				@include mq(sp){
+					top: 56%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					height: 23%;
+					a{
+						display: block;
+						height: 100%;
+						// background: rgba(0, 0, 0, 0.473);
+					}
+				}
+			}
+
 			//サイト右側中段に表示 （PCのみ）
 			&.-right-topBtn{
 				top: 2.5%;
