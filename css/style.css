@@ -124,7 +124,7 @@ img {
 }
 
 .w1200 {
-  width: 85% !important;
+  width: 75% !important;
   max-width: 1200px;
   margin: auto;
 }
@@ -536,6 +536,15 @@ img {
     max-width: 450px;
   }
 }
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-f-view-item {
+    bottom: 0%;
+    left: 35.9%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    max-width: 670px;
+  }
+}
 .l-contents.-img-bg .l-contentsBox.-kukakuBtn {
   top: 96%;
   left: 50%;
@@ -570,7 +579,7 @@ img {
 }
 @media screen and (min-width: 767px) {
   .l-contents.-img-bg .l-contentsBox.-pin02 {
-    top: 75.5%;
+    top: 78%;
     left: 76.5%;
     width: 45%;
   }
