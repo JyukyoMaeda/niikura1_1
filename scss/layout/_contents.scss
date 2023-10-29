@@ -168,17 +168,48 @@
 			}
 
 			// タップで拡大
-			&.-tap{
+			&.-tap01{
 				@include mq(sp){
-					top: 56%;
-					left: 50%;
+					top: 45.5%;
+					left: 24%;
 					transform: translate(-50%, -50%);
-					height: 23%;
+					height: 70px;
+					width: 70px;
+					// background: #00ffff5c;//確認用
+					border-radius: 50%;
 					a{
 						display: block;
 						height: 100%;
 						// background: rgba(0, 0, 0, 0.473);
 					}
+				}
+			}
+			&.-tap02{
+				@include mq(sp){
+					top: 74%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					height: 15%;
+					a{
+						display: block;
+						height: 100%;
+						// background: rgba(0, 0, 0, 0.473);
+					}
+				}
+			}
+			&.-linkText{
+				top: 59.5%;
+				left: 47.5%;
+				transform: translate(-50%, -50%);
+				width: 95%;
+				@include mq(tb){
+					top: 26%;
+					left: 25%;
+					width: 50%;
+				}
+				a{
+					display: inline-block;
+					transform: translateY(27%);
 				}
 			}
 
